@@ -196,6 +196,4 @@
 </footer>
   
 
-
-
 @endsection
