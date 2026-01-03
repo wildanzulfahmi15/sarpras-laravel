@@ -219,3 +219,4 @@ body {
 </div>
 <div id="overlay"></div>
 
+  <script src="{{ asset('js/script.js') }}"></script>
