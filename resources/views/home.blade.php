@@ -21,7 +21,7 @@
       --color-smk-gray: #B3B3B3;
       --color-smk-dark: #1E1E50;
     }
-
+    body{}
 
     img { max-width: 100%; display: block; }
     a { text-decoration: none; color: inherit; }

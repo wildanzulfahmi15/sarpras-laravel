@@ -234,7 +234,7 @@ body {
 
 
   <!-- Halaman akan tampil di sini -->
-  <div style="margin-top: 90px;">
+  <div style="margin-top: 72.3px;">
       @yield('content')
   </div>
 
