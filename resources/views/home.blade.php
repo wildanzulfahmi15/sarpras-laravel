@@ -167,9 +167,6 @@
 </style>
 <body>
 
-  {{-- NAVBAR COMPONENT --}}
-  <x-navbar />
-
   <!-- BANNER -->
 <header class="banner" id="banner"
   data-img1="{{ asset('img/banner1.png') }}"
