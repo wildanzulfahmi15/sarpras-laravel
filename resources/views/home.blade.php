@@ -203,8 +203,6 @@
   </div>
 </footer>
   
-  {{-- SCRIPT HOME --}}
-  <script src="{{ asset('js/home.js') }}"></script>
 
 
 </body>
