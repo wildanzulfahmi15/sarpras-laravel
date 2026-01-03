@@ -194,6 +194,36 @@
     © <span id="year"></span> SMKN 1 Cibinong — Inventaris Sarpras.
   </div>
 </footer>
-  
+  @push('scripts')
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const banner = document.getElementById("banner");
+  const content = document.getElementById("banner-content");
+
+  if (!banner) return;
+
+  const images = [
+    banner.dataset.img1,
+    banner.dataset.img2,
+    banner.dataset.img3,
+  ].filter(Boolean);
+
+  if (images.length === 0) return;
+
+  let index = 0;
+
+  // set awal
+  banner.style.backgroundImage = `url('${images[0]}')`;
+  content.classList.add("show");
+
+  // slideshow
+  setInterval(() => {
+    index = (index + 1) % images.length;
+    banner.style.backgroundImage = `url('${images[index]}')`;
+  }, 5000);
+});
+</script>
+@endpush
+
 
 @endsection
