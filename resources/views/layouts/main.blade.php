@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-  <link rel="stylesheet" href="{{ asset('css/home.css') }}">
+
   <title>@yield('title')</title>
 
   <!-- CSS Navbar -->
@@ -13,9 +12,6 @@
 </head>
 <body>
 
-  <!-- Navbar Component -->
-<link rel="stylesheet" href="{{ asset('css/style.css') }}">
-<script src="{{ asset('js/script.js') }}" defer></script>
 
 <style>
   /* === THEME COLORS === */
@@ -235,7 +231,6 @@ body {
 </div>
 <div id="overlay"></div>
 
-  <script src="{{ asset('js/script.js') }}"></script>
 
 
   <!-- Halaman akan tampil di sini -->
@@ -246,6 +241,31 @@ body {
   <!-- Javascript Navbar -->
 
   @stack('scripts')
+  <script>
+    // Navbar scroll blur
+  const navbar = document.getElementById("navbar");
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 50) navbar.classList.add("scrolled");
+    else navbar.classList.remove("scrolled");
+  });
+  
+  // Sidebar toggle
+  const hamburger = document.getElementById("hamburger");
+  const sidebar = document.getElementById("sidebar");
+  const overlay = document.getElementById("overlay");
+  
+  hamburger.addEventListener("click", () => {
+    sidebar.classList.toggle("open");
+    overlay.classList.toggle("show");
+    hamburger.classList.toggle("active");
+  });
+  
+  overlay.addEventListener("click", () => {
+    sidebar.classList.remove("open");
+    overlay.classList.remove("show");
+    hamburger.classList.remove("active");
+  });
+  
+  </script>
 </body>
-
 </html>
