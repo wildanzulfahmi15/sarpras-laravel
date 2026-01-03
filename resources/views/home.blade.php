@@ -161,6 +161,75 @@
       font-size: 0.95rem;
     }
 
+    footer {
+  background: #2e3192;
+  color: white;
+  padding: 40px 10%;
+  margin-top: 60px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.footer-grid div {
+  flex: 1;
+  min-width: 230px;
+}
+
+.footer-grid h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.footer-grid p,
+.footer-grid a {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.footer-grid a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-grid a:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 25px;
+  padding-top: 15px;
+  border-top: 1px solid rgba(255,255,255,0.3);
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  footer {
+    padding: 40px 6%;
+  }
+
+  .footer-grid {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .footer-grid div {
+    max-width: 100%;
+  }
+}
+
 </style>
 <body>
 
@@ -181,35 +250,27 @@
     </div>
   </header>
   
-  
-  <!-- ABOUT -->
-  <section class="about" id="about">
-    <h2>Tentang Sistem Inventaris Sarpras</h2>
-    <p>Sistem ini dirancang untuk mempermudah pengelolaan, pencatatan, dan pelacakan barang inventaris di SMKN 1 Cibinong secara digital dan efisien.</p>
-    
-    <div class="features">
-      <div class="card">
-        <div class="card-icon">📦</div>
-        <h3>Data Barang</h3>
-        <p>Menampilkan data barang yang tersimpan di gudang sekolah secara real-time.</p>
-      </div>
-      
-      <div class="card">
-        <div class="card-icon">📝</div>
-        <h3>Peminjaman</h3>
-        <p>Mempermudah proses peminjaman dan pengembalian barang bagi guru dan siswa.</p>
-      </div>
-      
-      <div class="card">
-        <div class="card-icon">👩‍💼</div>
-        <h3>Admin Sekolah</h3>
-        <p>Dikelola langsung oleh petugas sarpras untuk menjaga keakuratan data inventaris.</p>
-      </div>
+<footer>
+  <div class="footer-grid">
+    <div>
+      <h3>SMKN 1 Cibinong</h3>
+      <p>Sistem Inventaris Sarpras untuk mempermudah pengelolaan dan pelacakan barang sekolah secara digital.</p>
     </div>
-  </section>
-  
-  <!-- FOOTER -->
-<x-footer />
+    <div>
+      <h3>Kontak</h3>
+      <p>📧 sarpras@smkn1cibinong.sch.id</p>
+      <p>📞 (021) 87654321</p>
+    </div>
+    <div>
+      <h3>Ikuti Kami</h3>
+      <a href="https://www.facebook.com/smknegeri1cibinong/?locale=id_ID" target="_blank">Facebook</a><br>
+      <a href="https://www.instagram.com/smkn1cbn_official/" target="_blank">Instagram</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    © <span id="year"></span> SMKN 1 Cibinong — Inventaris Sarpras.
+  </div>
+</footer>
   
   {{-- SCRIPT HOME --}}
   <script src="{{ asset('js/home.js') }}"></script>
