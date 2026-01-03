@@ -93,79 +93,10 @@
       color: var(--color-smk-dark);
     }
 
-    /* === ABOUT === */
-    .about {
-      padding: 80px 20px;
-      background-color: #f5f5f5;
-      text-align: center;
-    }
-
-    .about h2 {
-      font-size: 2rem;
-      font-weight: 700;
-      color: var(--color-smk-purple);
-    }
-
-    .about p {
-      max-width: 800px;
-      margin: 20px auto;
-      color: var(--color-smk-gray);
-    }
-
-    .features {
-      margin-top: 40px;
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 20px;
-    }
-
-    @media (min-width: 768px) {
-      .features {
-        grid-template-columns: repeat(3, 1fr);
-      }
-    }
-
-    .card {
-      background-color: #fff;
-      border-radius: 16px;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-      padding: 30px;
-      opacity: 0;
-      transform: translateY(30px);
-      transition: all 0.8s ease;
-    }
-
-    .card.show {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    .card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-    }
-
-    .card-icon {
-      font-size: 3rem;
-      color: var(--color-smk-blue);
-      margin-bottom: 15px;
-    }
-
-    .card h3 {
-      color: var(--color-smk-purple);
-      margin-bottom: 10px;
-    }
-
-    .card p {
-      color: var(--color-smk-gray);
-      font-size: 0.95rem;
-    }
-
     footer {
   background: #2e3192;
   color: white;
   padding: 40px 10%;
-  margin-top: 60px;
   font-family: Arial, sans-serif;
 }
 
