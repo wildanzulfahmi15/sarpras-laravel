@@ -11,8 +11,6 @@
   <title>Inventaris Sarpras — SMKN 1 Cibinong</title>
 
 
-  {{-- CSS HOME --}}
-  <link rel="stylesheet" href="{{ asset('css/home.css') }}">
 </head>
 <style>
       :root {
