@@ -3,15 +3,7 @@
 @section('title', 'Home')
 
 @section('content')
-<!DOCTYPE html>
-<html lang="id">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Inventaris Sarpras — SMKN 1 Cibinong</title>
 
-
-</head>
 <style>
       :root {
       --color-smk-purple: #2E3192;
@@ -165,7 +157,7 @@
 }
 
 </style>
-<body>
+
 
   <!-- BANNER -->
 <header class="banner" id="banner"
@@ -205,6 +197,5 @@
   
 
 
-</body>
-</html>
+
 @endsection
