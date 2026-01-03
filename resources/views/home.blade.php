@@ -220,7 +220,7 @@ document.addEventListener("DOMContentLoaded", () => {
   setInterval(() => {
     index = (index + 1) % images.length;
     banner.style.backgroundImage = `url('${images[index]}')`;
-  }, 5000);
+  }, 50000);
 });
 </script>
 @endpush
